@@ -1,0 +1,170 @@
+.full-page{
+    margin: auto;
+    text-align: center;
+}
+.full-page .menu{
+    background: rgba(221, 220, 220);
+    position: fixed;
+    z-index: 5;
+    
+}
+.full-page .menu ul{
+    list-style: none;
+    text-align: right;
+    height: 30px;
+}
+.bingo{position: absolute;
+    left: 5%;
+    top: 1%;
+    color: rgb(7, 6, 6);
+    font-weight: 600;
+}
+.full-page .menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.full-page .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(5, 4, 4);
+    text-transform: capitalize;
+    padding: 10px 32px;
+    font-weight: bold;
+}
+
+.full-page .menu ul .home:hover{
+    color: rgb(22, 19, 19);
+    background: rgb(125, 165, 162);
+}
+.full-page .menu ul li:hover{
+    color: rgb(37, 30, 30);
+    background: rgb(125, 165, 162);
+
+}
+
+/* dropdown 1 part*/
+
+.full-page .menu ul .port::after{
+    content: "\f150";
+    font-family:"Font Awesome 5 Free";
+    font-family: 600;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 10px;
+    top: 0px;
+    
+
+}
+
+.full-page .menu ul .home{
+    position: relative;
+    
+}
+.full-page .menu ul .home ul{
+    display: block;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: .4s;
+    /* background: #af9696b5; */
+
+}
+.full-page .menu ul .home ul li{
+    border-bottom: 1px solid rgb(43, 36, 36);
+    margin-left: -32px;
+}
+.full-page .menu ul .home ul li a{
+    /* display: block; */
+    width: 200px;
+    /* margin-right: 0px; */
+    background: #d3d3d3b5;
+}
+.full-page .menu ul .home ul li:first-child{
+    border-top: 1px solid #1f1919b5;
+}
+
+/* hover part */
+.full-page .menu ul .home ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    /* margin-right: -25px; */
+    padding-right: -60px;
+}
+.full-page .menu ul .home:hover ul{
+    opacity: 2;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.full-page .menu ul .home ul li:hover{
+    background: rgb(26, 160, 212);
+}
+
+
+/* banner part  */
+.bann-img{
+    max-width: 100%;
+    position: relative;
+    margin: -15px;
+}
+.banner{
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    text-transform: capitalize;
+    line-height: 25px;
+
+}
+
+.h1{
+    text-align: center;
+    padding: 10px 30px;
+    background: white;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+} 
+.h1::before{
+    background-color: rgb(224, 135, 93);
+    content: " ";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition:  all 0.6s ease;
+    transition:  all 0.6s;
+    border-radius: 25px;
+}
+.h1:hover::before{
+    width: 100%;
+}
+.h1:hover{
+    color: rgb(13, 17, 241);
+}
+.offer{
+    text-transform: capitalize;
+}
+.offer::before{
+    content: "\f150";
+    font-family:"Font Awesome 5 Free";
+    font-family: 600;
+    color: rgb(21, 34, 214);
+    
+}
+.offer::after{
+    content: "\f150";
+    font-family:"Font Awesome 5 Free";
+    font-family: 600;
+    color: rgb(21, 34, 214);
+    
+}
